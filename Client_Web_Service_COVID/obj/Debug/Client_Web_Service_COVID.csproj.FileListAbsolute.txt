@@ -16,3 +16,5 @@ C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\b
 C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.csproj.CopyComplete
 C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.Inscription.resources
 C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.MainApplication.resources
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Newtonsoft.Json.dll
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Newtonsoft.Json.xml
