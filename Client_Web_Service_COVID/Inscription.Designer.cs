@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textPrenom = new System.Windows.Forms.TextBox();
+            this.textNom = new System.Windows.Forms.TextBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
+            this.textTelephone = new System.Windows.Forms.TextBox();
+            this.textPassword = new System.Windows.Forms.TextBox();
             this.labelPrenom = new System.Windows.Forms.Label();
             this.labelNom = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
@@ -41,40 +41,40 @@
             this.buttonEnregistrer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textPrenom
             // 
-            this.textBox1.Location = new System.Drawing.Point(198, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 20);
-            this.textBox1.TabIndex = 0;
+            this.textPrenom.Location = new System.Drawing.Point(198, 103);
+            this.textPrenom.Name = "textPrenom";
+            this.textPrenom.Size = new System.Drawing.Size(242, 20);
+            this.textPrenom.TabIndex = 0;
             // 
-            // textBox2
+            // textNom
             // 
-            this.textBox2.Location = new System.Drawing.Point(198, 144);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 20);
-            this.textBox2.TabIndex = 1;
+            this.textNom.Location = new System.Drawing.Point(198, 144);
+            this.textNom.Name = "textNom";
+            this.textNom.Size = new System.Drawing.Size(242, 20);
+            this.textNom.TabIndex = 1;
             // 
-            // textBox3
+            // textEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(198, 184);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(242, 20);
-            this.textBox3.TabIndex = 2;
+            this.textEmail.Location = new System.Drawing.Point(198, 184);
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(242, 20);
+            this.textEmail.TabIndex = 2;
             // 
-            // textBox4
+            // textTelephone
             // 
-            this.textBox4.Location = new System.Drawing.Point(198, 221);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(242, 20);
-            this.textBox4.TabIndex = 3;
+            this.textTelephone.Location = new System.Drawing.Point(198, 221);
+            this.textTelephone.Name = "textTelephone";
+            this.textTelephone.Size = new System.Drawing.Size(242, 20);
+            this.textTelephone.TabIndex = 3;
             // 
-            // textBox5
+            // textPassword
             // 
-            this.textBox5.Location = new System.Drawing.Point(198, 259);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(242, 20);
-            this.textBox5.TabIndex = 4;
+            this.textPassword.Location = new System.Drawing.Point(198, 259);
+            this.textPassword.Name = "textPassword";
+            this.textPassword.Size = new System.Drawing.Size(242, 20);
+            this.textPassword.TabIndex = 4;
             // 
             // labelPrenom
             // 
@@ -137,6 +137,7 @@
             this.buttonEnregistrer.TabIndex = 10;
             this.buttonEnregistrer.Text = "Enregistrer";
             this.buttonEnregistrer.UseVisualStyleBackColor = false;
+            this.buttonEnregistrer.Click += new System.EventHandler(this.buttonEnregistrer_Click);
             // 
             // Inscription
             // 
@@ -149,11 +150,11 @@
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.labelNom);
             this.Controls.Add(this.labelPrenom);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textPassword);
+            this.Controls.Add(this.textTelephone);
+            this.Controls.Add(this.textEmail);
+            this.Controls.Add(this.textNom);
+            this.Controls.Add(this.textPrenom);
             this.Name = "Inscription";
             this.Text = "Inscription";
             this.ResumeLayout(false);
@@ -163,11 +164,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textPrenom;
+        private System.Windows.Forms.TextBox textNom;
+        private System.Windows.Forms.TextBox textEmail;
+        private System.Windows.Forms.TextBox textTelephone;
+        private System.Windows.Forms.TextBox textPassword;
         private System.Windows.Forms.Label labelPrenom;
         private System.Windows.Forms.Label labelNom;
         private System.Windows.Forms.Label labelEmail;
