@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nosStructuresDeSantéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +60,7 @@
             this.nosStructuresDeSantéToolStripMenuItem.Name = "nosStructuresDeSantéToolStripMenuItem";
             this.nosStructuresDeSantéToolStripMenuItem.Size = new System.Drawing.Size(144, 20);
             this.nosStructuresDeSantéToolStripMenuItem.Text = "Nos Structures de Santé";
+            this.nosStructuresDeSantéToolStripMenuItem.Click += new System.EventHandler(this.nosStructuresDeSantéToolStripMenuItem_Click);
             // 
             // rendezVousToolStripMenuItem
             // 
@@ -101,14 +103,23 @@
             this.deconnexionToolStripMenuItem.Name = "deconnexionToolStripMenuItem";
             this.deconnexionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.deconnexionToolStripMenuItem.Text = "Deconnexion";
+            this.deconnexionToolStripMenuItem.Click += new System.EventHandler(this.deconnexionToolStripMenuItem_Click);
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(136, 120);
+            this.dataGridView1.Location = new System.Drawing.Point(66, 125);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(481, 237);
+            this.dataGridView1.Size = new System.Drawing.Size(644, 192);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // MainApplication
             // 
