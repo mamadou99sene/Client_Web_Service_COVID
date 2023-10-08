@@ -74,6 +74,7 @@
             this.connexion.TabIndex = 4;
             this.connexion.Text = "Connexion";
             this.connexion.UseVisualStyleBackColor = true;
+            this.connexion.Click += new System.EventHandler(this.connexion_Click_1);
             // 
             // inscription
             // 
@@ -84,6 +85,7 @@
             this.inscription.TabIndex = 5;
             this.inscription.Text = "S\'inscrire";
             this.inscription.UseVisualStyleBackColor = true;
+            this.inscription.Click += new System.EventHandler(this.inscription_Click_1);
             // 
             // textBox_Password
             // 
@@ -107,7 +109,6 @@
             this.Controls.Add(this.textBox_email);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
