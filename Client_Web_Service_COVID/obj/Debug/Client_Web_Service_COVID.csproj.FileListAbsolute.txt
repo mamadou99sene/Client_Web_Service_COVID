@@ -18,3 +18,15 @@ C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\o
 C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.MainApplication.resources
 C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Newtonsoft.Json.dll
 C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Newtonsoft.Json.xml
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.RendezVous.resources
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Microsoft.Web.WebView2.Core.dll
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Microsoft.Web.WebView2.Core.xml
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.ConsultationRendezVous.resources
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.LocalisationMaps.resources
