@@ -27,16 +27,16 @@ namespace Client_Web_Service_COVID
         }
         public async void Chargement()
         {
-            using(HttpClient client = new HttpClient()) 
-            { 
+            using (HttpClient client = new HttpClient())
+            {
                 try
                 {
                     String url = "http://localhost:8080/REST_COVID_WEB_SERVICE/rs/structures";
                     //effectuer une requête vers l'URL du serveur
-                    HttpRequestMessage request =new HttpRequestMessage(HttpMethod.Get, url);
+                    HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
                     request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/xml"));
                     HttpResponseMessage response = await client.SendAsync(request);
-                    if(response.IsSuccessStatusCode) 
+                    if (response.IsSuccessStatusCode)
                     {
 
                         //lecture du contenu de la reponse
@@ -44,7 +44,7 @@ namespace Client_Web_Service_COVID
                         // Désérialisez la réponse XML en objets C#
                         using (var stringReader = new StringReader(xmlResponse))
                         {
-                            XmlSerializer serializer=new XmlSerializer(typeof(Structuredesantes));
+                            XmlSerializer serializer = new XmlSerializer(typeof(Structuredesantes));
                             Structuredesantes structuredesantes = (Structuredesantes)serializer.Deserialize(stringReader);
                             /*foreach (Utilisateur u in utilisateurs.ListeUtilisateurs)
                              {
@@ -59,7 +59,7 @@ namespace Client_Web_Service_COVID
                     }
 
                 }
-                catch(Exception ex) 
+                catch (Exception ex)
                 {
                     MessageBox.Show("Une erreur s'est produite : " + ex.Message);
                 }
@@ -69,25 +69,25 @@ namespace Client_Web_Service_COVID
 
         private async void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex>=0 && e.RowIndex<dataGridView1.Rows.Count) 
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
             {
                 int idStructuresante = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["idStructuresante"].Value);
-                Console.WriteLine(idStructuresante);
-                using(HttpClient client = new HttpClient()) 
+                //Console.WriteLine(idStructuresante);
+                using (HttpClient client = new HttpClient())
                 {
                     try
                     {
                         string url = $"http://localhost:8080/REST_COVID_WEB_SERVICE/rs/structures/{idStructuresante}";
-                        HttpRequestMessage request=new HttpRequestMessage(HttpMethod.Get, url);
+                        HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
                         request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/xml"));
                         HttpResponseMessage response = await client.SendAsync(request);
-                        if(response.IsSuccessStatusCode)
+                        if (response.IsSuccessStatusCode)
                         {
-                            string xmlResponse =await response.Content.ReadAsStringAsync();
-                            using(StringReader stringReader = new StringReader(xmlResponse)) 
+                            string xmlResponse = await response.Content.ReadAsStringAsync();
+                            using (StringReader stringReader = new StringReader(xmlResponse))
                             {
-                                XmlSerializer serialiser=new XmlSerializer(typeof(Structuredesante));
-                                Structuredesante sante =(Structuredesante) serialiser.Deserialize(stringReader);
+                                XmlSerializer serialiser = new XmlSerializer(typeof(Structuredesante));
+                                Structuredesante sante = (Structuredesante)serialiser.Deserialize(stringReader);
                                 List<dynamic> list = new List<dynamic>();
                                 list.Add(sante);
                                 this.dataGridView1.DataSource = list;
@@ -118,5 +118,26 @@ namespace Client_Web_Service_COVID
             Form1 form = new Form1();
             form.Show();
         }
+
+        private void prendreUnRendezVoussToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RendezVous rv = new RendezVous();
+            rv.Show();
+        }
+
+        private void consulterMesRendezVousToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultationRendezVous rendezVous = new ConsultationRendezVous();
+            rendezVous.Show();
+            //this.dataGridView1.DataSource = rendezVs.ListRendezVous;
+
+        }
+
+        private void localiserSurMapsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LocalisationMaps localiser=new LocalisationMaps();
+            localiser.Show();
+        }
     }
+       
 }
