@@ -45,35 +45,35 @@
             // 
             this.textPrenom.Location = new System.Drawing.Point(198, 103);
             this.textPrenom.Name = "textPrenom";
-            this.textPrenom.Size = new System.Drawing.Size(242, 20);
+            this.textPrenom.Size = new System.Drawing.Size(326, 20);
             this.textPrenom.TabIndex = 0;
             // 
             // textNom
             // 
             this.textNom.Location = new System.Drawing.Point(198, 144);
             this.textNom.Name = "textNom";
-            this.textNom.Size = new System.Drawing.Size(242, 20);
+            this.textNom.Size = new System.Drawing.Size(326, 20);
             this.textNom.TabIndex = 1;
             // 
             // textEmail
             // 
             this.textEmail.Location = new System.Drawing.Point(198, 184);
             this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(242, 20);
+            this.textEmail.Size = new System.Drawing.Size(326, 20);
             this.textEmail.TabIndex = 2;
             // 
             // textTelephone
             // 
             this.textTelephone.Location = new System.Drawing.Point(198, 221);
             this.textTelephone.Name = "textTelephone";
-            this.textTelephone.Size = new System.Drawing.Size(242, 20);
+            this.textTelephone.Size = new System.Drawing.Size(326, 20);
             this.textTelephone.TabIndex = 3;
             // 
             // textPassword
             // 
             this.textPassword.Location = new System.Drawing.Point(198, 259);
             this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(242, 20);
+            this.textPassword.Size = new System.Drawing.Size(326, 20);
             this.textPassword.TabIndex = 4;
             // 
             // labelPrenom
@@ -133,7 +133,7 @@
             this.buttonEnregistrer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonEnregistrer.Location = new System.Drawing.Point(198, 309);
             this.buttonEnregistrer.Name = "buttonEnregistrer";
-            this.buttonEnregistrer.Size = new System.Drawing.Size(242, 31);
+            this.buttonEnregistrer.Size = new System.Drawing.Size(326, 31);
             this.buttonEnregistrer.TabIndex = 10;
             this.buttonEnregistrer.Text = "Enregistrer";
             this.buttonEnregistrer.UseVisualStyleBackColor = false;
@@ -156,7 +156,7 @@
             this.Controls.Add(this.textNom);
             this.Controls.Add(this.textPrenom);
             this.Name = "Inscription";
-            this.Text = "Inscription";
+            this.Text = "w";
             this.ResumeLayout(false);
             this.PerformLayout();
 
