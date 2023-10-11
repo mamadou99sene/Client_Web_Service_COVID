@@ -150,6 +150,9 @@
             this.Controls.Add(this.ComboBoxTypeRV);
             this.Controls.Add(this.ComboBoxStructure);
             this.Controls.Add(this.ComboBoxIdentite);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "RendezVous";
             this.Text = "RendezVous";
             this.Load += new System.EventHandler(this.RendezVous_Load);
