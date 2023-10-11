@@ -30,3 +30,4 @@ C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\b
 C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
 C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.ConsultationRendezVous.resources
 C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.LocalisationMaps.resources
+C:\Users\FIS-TS\source\repos\Client_Web_Service_COVID\Client_Web_Service_COVID\obj\Debug\Client_Web_Service_COVID.SuivreMonRv.resources

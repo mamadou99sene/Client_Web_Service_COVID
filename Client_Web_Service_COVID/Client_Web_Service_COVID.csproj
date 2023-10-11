@@ -108,6 +108,12 @@
       <DependentUpon>RendezVous.cs</DependentUpon>
     </Compile>
     <Compile Include="Structuredesante.cs" />
+    <Compile Include="SuivreMonRv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuivreMonRv.Designer.cs">
+      <DependentUpon>SuivreMonRv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilisateur.cs" />
     <EmbeddedResource Include="ConsultationRendezVous.resx">
       <DependentUpon>ConsultationRendezVous.cs</DependentUpon>
@@ -132,9 +138,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RendezVous.resx">
       <DependentUpon>RendezVous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuivreMonRv.resx">
+      <DependentUpon>SuivreMonRv.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -149,6 +159,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\pexels-anna-shvets-4167544.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-edward-jenner-4031867.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-karolina-grabowska-4195325.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-miguel-á-padriñán-3936421.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

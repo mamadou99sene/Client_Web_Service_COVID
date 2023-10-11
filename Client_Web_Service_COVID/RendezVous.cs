@@ -223,5 +223,45 @@ namespace Client_Web_Service_COVID
             }
             return struturedesante;
         }
+
+        private void labelTypeRV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelStructure_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelIdentite_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimeRV_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBoxTypeRV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBoxStructure_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBoxIdentite_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

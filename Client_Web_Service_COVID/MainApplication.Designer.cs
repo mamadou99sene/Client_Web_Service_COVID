@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nosStructuresDeSantéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.localiserSurMapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prendreUnRendezVoussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suivreMonRendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterMesRendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rechercherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rechercherStructureDeSantéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +43,6 @@
             this.deconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.suivreMonRendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -103,6 +103,15 @@
             this.prendreUnRendezVoussToolStripMenuItem.Text = "Prendre un rendez vouss";
             this.prendreUnRendezVoussToolStripMenuItem.Click += new System.EventHandler(this.prendreUnRendezVoussToolStripMenuItem_Click);
             // 
+            // suivreMonRendezVousToolStripMenuItem
+            // 
+            this.suivreMonRendezVousToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
+            this.suivreMonRendezVousToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.suivreMonRendezVousToolStripMenuItem.Name = "suivreMonRendezVousToolStripMenuItem";
+            this.suivreMonRendezVousToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+            this.suivreMonRendezVousToolStripMenuItem.Text = "suivre mon rendez vous";
+            this.suivreMonRendezVousToolStripMenuItem.Click += new System.EventHandler(this.suivreMonRendezVousToolStripMenuItem_Click);
+            // 
             // consulterMesRendezVousToolStripMenuItem
             // 
             this.consulterMesRendezVousToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
@@ -161,12 +170,14 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LavenderBlush;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(66, 125);
@@ -188,15 +199,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Liste des structures de santé, cliquez sur la structure de santé pour voir les dé" +
     "tails";
-            // 
-            // suivreMonRendezVousToolStripMenuItem
-            // 
-            this.suivreMonRendezVousToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
-            this.suivreMonRendezVousToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.suivreMonRendezVousToolStripMenuItem.Name = "suivreMonRendezVousToolStripMenuItem";
-            this.suivreMonRendezVousToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.suivreMonRendezVousToolStripMenuItem.Text = "suivre mon rendez vous";
-            this.suivreMonRendezVousToolStripMenuItem.Click += new System.EventHandler(this.suivreMonRendezVousToolStripMenuItem_Click);
             // 
             // MainApplication
             // 
