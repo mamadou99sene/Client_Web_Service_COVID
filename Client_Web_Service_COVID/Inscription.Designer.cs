@@ -155,8 +155,10 @@
             this.Controls.Add(this.textEmail);
             this.Controls.Add(this.textNom);
             this.Controls.Add(this.textPrenom);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Inscription";
-            this.Text = "w";
             this.ResumeLayout(false);
             this.PerformLayout();
 
