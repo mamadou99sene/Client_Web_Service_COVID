@@ -107,6 +107,9 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.textBox_email);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
