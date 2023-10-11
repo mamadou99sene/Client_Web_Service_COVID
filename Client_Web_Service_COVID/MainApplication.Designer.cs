@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nosStructuresDeSantéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.localiserSurMapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,10 +36,6 @@
             this.prendreUnRendezVoussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suivreMonRendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterMesRendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rechercherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rechercherStructureDeSantéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rechercherRendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rechercherUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,7 +48,6 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nosStructuresDeSantéToolStripMenuItem,
             this.rendezVousToolStripMenuItem,
-            this.rechercherToolStripMenuItem,
             this.deconnexionToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -121,43 +116,6 @@
             this.consulterMesRendezVousToolStripMenuItem.Text = "Consulter les rendez vous";
             this.consulterMesRendezVousToolStripMenuItem.Click += new System.EventHandler(this.consulterMesRendezVousToolStripMenuItem_Click);
             // 
-            // rechercherToolStripMenuItem
-            // 
-            this.rechercherToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
-            this.rechercherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rechercherStructureDeSantéToolStripMenuItem,
-            this.rechercherRendezVousToolStripMenuItem,
-            this.rechercherUtilisateurToolStripMenuItem});
-            this.rechercherToolStripMenuItem.Font = new System.Drawing.Font("Stencil", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rechercherToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.rechercherToolStripMenuItem.Name = "rechercherToolStripMenuItem";
-            this.rechercherToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.rechercherToolStripMenuItem.Text = "Rechercher";
-            // 
-            // rechercherStructureDeSantéToolStripMenuItem
-            // 
-            this.rechercherStructureDeSantéToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
-            this.rechercherStructureDeSantéToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.rechercherStructureDeSantéToolStripMenuItem.Name = "rechercherStructureDeSantéToolStripMenuItem";
-            this.rechercherStructureDeSantéToolStripMenuItem.Size = new System.Drawing.Size(333, 22);
-            this.rechercherStructureDeSantéToolStripMenuItem.Text = "Rechercher structure de santé";
-            // 
-            // rechercherRendezVousToolStripMenuItem
-            // 
-            this.rechercherRendezVousToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
-            this.rechercherRendezVousToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.rechercherRendezVousToolStripMenuItem.Name = "rechercherRendezVousToolStripMenuItem";
-            this.rechercherRendezVousToolStripMenuItem.Size = new System.Drawing.Size(333, 22);
-            this.rechercherRendezVousToolStripMenuItem.Text = "Rechercher rendez vous";
-            // 
-            // rechercherUtilisateurToolStripMenuItem
-            // 
-            this.rechercherUtilisateurToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
-            this.rechercherUtilisateurToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.rechercherUtilisateurToolStripMenuItem.Name = "rechercherUtilisateurToolStripMenuItem";
-            this.rechercherUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(333, 22);
-            this.rechercherUtilisateurToolStripMenuItem.Text = "Rechercher utilisateur";
-            // 
             // deconnexionToolStripMenuItem
             // 
             this.deconnexionToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
@@ -170,12 +128,12 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LavenderBlush;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -232,10 +190,6 @@
         private System.Windows.Forms.ToolStripMenuItem consulterMesRendezVousToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deconnexionToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ToolStripMenuItem rechercherToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rechercherStructureDeSantéToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rechercherRendezVousToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rechercherUtilisateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem localiserSurMapsToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem suivreMonRendezVousToolStripMenuItem;
