@@ -61,6 +61,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ConsultationRendezVous";
             this.Text = "ConsultationRendezVous";
             this.Load += new System.EventHandler(this.ConsultationRendezVous_Load);
