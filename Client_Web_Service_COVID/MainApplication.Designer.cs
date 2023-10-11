@@ -31,17 +31,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nosStructuresDeSantéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.localiserSurMapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prendreUnRendezVoussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consulterMesRendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.rechercherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rechercherStructureDeSantéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rechercherRendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rechercherUtilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.localiserSurMapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.suivreMonRendezVousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -71,11 +72,21 @@
             this.nosStructuresDeSantéToolStripMenuItem.Text = "Nos Structures de Santé";
             this.nosStructuresDeSantéToolStripMenuItem.Click += new System.EventHandler(this.nosStructuresDeSantéToolStripMenuItem_Click);
             // 
+            // localiserSurMapsToolStripMenuItem
+            // 
+            this.localiserSurMapsToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
+            this.localiserSurMapsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.localiserSurMapsToolStripMenuItem.Name = "localiserSurMapsToolStripMenuItem";
+            this.localiserSurMapsToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.localiserSurMapsToolStripMenuItem.Text = "localiser sur maps";
+            this.localiserSurMapsToolStripMenuItem.Click += new System.EventHandler(this.localiserSurMapsToolStripMenuItem_Click);
+            // 
             // rendezVousToolStripMenuItem
             // 
             this.rendezVousToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
             this.rendezVousToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.prendreUnRendezVoussToolStripMenuItem,
+            this.suivreMonRendezVousToolStripMenuItem,
             this.consulterMesRendezVousToolStripMenuItem});
             this.rendezVousToolStripMenuItem.Font = new System.Drawing.Font("Stencil", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rendezVousToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -88,7 +99,7 @@
             this.prendreUnRendezVoussToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
             this.prendreUnRendezVoussToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.prendreUnRendezVoussToolStripMenuItem.Name = "prendreUnRendezVoussToolStripMenuItem";
-            this.prendreUnRendezVoussToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
+            this.prendreUnRendezVoussToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
             this.prendreUnRendezVoussToolStripMenuItem.Text = "Prendre un rendez vouss";
             this.prendreUnRendezVoussToolStripMenuItem.Click += new System.EventHandler(this.prendreUnRendezVoussToolStripMenuItem_Click);
             // 
@@ -97,35 +108,9 @@
             this.consulterMesRendezVousToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
             this.consulterMesRendezVousToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.consulterMesRendezVousToolStripMenuItem.Name = "consulterMesRendezVousToolStripMenuItem";
-            this.consulterMesRendezVousToolStripMenuItem.Size = new System.Drawing.Size(293, 22);
-            this.consulterMesRendezVousToolStripMenuItem.Text = "Consulter mes rendez vous";
+            this.consulterMesRendezVousToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+            this.consulterMesRendezVousToolStripMenuItem.Text = "Consulter les rendez vous";
             this.consulterMesRendezVousToolStripMenuItem.Click += new System.EventHandler(this.consulterMesRendezVousToolStripMenuItem_Click);
-            // 
-            // deconnexionToolStripMenuItem
-            // 
-            this.deconnexionToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
-            this.deconnexionToolStripMenuItem.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deconnexionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deconnexionToolStripMenuItem.Name = "deconnexionToolStripMenuItem";
-            this.deconnexionToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.deconnexionToolStripMenuItem.Text = "Deconnexion";
-            this.deconnexionToolStripMenuItem.Click += new System.EventHandler(this.deconnexionToolStripMenuItem_Click);
-            // 
-            // dataGridView1
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LavenderBlush;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(66, 125);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(644, 192);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // rechercherToolStripMenuItem
             // 
@@ -164,14 +149,31 @@
             this.rechercherUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(333, 22);
             this.rechercherUtilisateurToolStripMenuItem.Text = "Rechercher utilisateur";
             // 
-            // localiserSurMapsToolStripMenuItem
+            // deconnexionToolStripMenuItem
             // 
-            this.localiserSurMapsToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
-            this.localiserSurMapsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.localiserSurMapsToolStripMenuItem.Name = "localiserSurMapsToolStripMenuItem";
-            this.localiserSurMapsToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.localiserSurMapsToolStripMenuItem.Text = "localiser sur maps";
-            this.localiserSurMapsToolStripMenuItem.Click += new System.EventHandler(this.localiserSurMapsToolStripMenuItem_Click);
+            this.deconnexionToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
+            this.deconnexionToolStripMenuItem.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deconnexionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.deconnexionToolStripMenuItem.Name = "deconnexionToolStripMenuItem";
+            this.deconnexionToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.deconnexionToolStripMenuItem.Text = "Deconnexion";
+            this.deconnexionToolStripMenuItem.Click += new System.EventHandler(this.deconnexionToolStripMenuItem_Click);
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(66, 125);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(644, 192);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // label1
             // 
@@ -187,6 +189,15 @@
             this.label1.Text = "Liste des structures de santé, cliquez sur la structure de santé pour voir les dé" +
     "tails";
             // 
+            // suivreMonRendezVousToolStripMenuItem
+            // 
+            this.suivreMonRendezVousToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
+            this.suivreMonRendezVousToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.suivreMonRendezVousToolStripMenuItem.Name = "suivreMonRendezVousToolStripMenuItem";
+            this.suivreMonRendezVousToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+            this.suivreMonRendezVousToolStripMenuItem.Text = "suivre mon rendez vous";
+            this.suivreMonRendezVousToolStripMenuItem.Click += new System.EventHandler(this.suivreMonRendezVousToolStripMenuItem_Click);
+            // 
             // MainApplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,7 +206,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainApplication";
             this.Text = "MainApplication";
             this.Load += new System.EventHandler(this.MainApplication_Load);
@@ -222,5 +236,6 @@
         private System.Windows.Forms.ToolStripMenuItem rechercherUtilisateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem localiserSurMapsToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem suivreMonRendezVousToolStripMenuItem;
     }
 }

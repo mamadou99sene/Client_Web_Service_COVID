@@ -138,6 +138,12 @@ namespace Client_Web_Service_COVID
             LocalisationMaps localiser=new LocalisationMaps();
             localiser.Show();
         }
+
+        private void suivreMonRendezVousToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SuivreMonRv rv=new SuivreMonRv();
+            rv.Show();
+        }
     }
        
 }
