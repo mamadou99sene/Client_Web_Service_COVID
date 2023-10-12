@@ -65,10 +65,26 @@ namespace Client_Web_Service_COVID
             if(textBoxEmail.Text!=string.Empty)
             {
                 string email = this.textBoxEmail.Text;
-                RendezVs rv = await LoadRendezVousByUser(email);
-                if (rv.ListRendezVous.Count > 0)
+                RendezVs rendezV = await LoadRendezVousByUser(email);
+                if (rendezV.ListRendezVous.Count > 0)
                 {
-                    this.dataGridView1.DataSource = rv.ListRendezVous;
+                    List<RepresentationRv> list_rv = new List<RepresentationRv>(rendezV.ListRendezVous.Count);
+                    RepresentationRv representation = null;
+                    for (int i = 0; i < rendezV.ListRendezVous.Count; i++)
+                    {
+                        representation = new RepresentationRv();
+                        representation.Id = rendezV.ListRendezVous[i].Id;
+                        representation.Date = rendezV.ListRendezVous[i].Date;
+                        representation.Type = rendezV.ListRendezVous[i].Type;
+                        representation.StatusRv = rendezV.ListRendezVous[i].Status;
+                        representation.UserFirstName = rendezV.ListRendezVous[i].User.Prenom;
+                        representation.UserLastName = rendezV.ListRendezVous[i].User.Nom;
+                        representation.UserEmail = rendezV.ListRendezVous[i].User.Email;
+                        representation.StructureLocate = rendezV.ListRendezVous[i].Structuredesante.Localisation;
+                        representation.PhoneStructure = rendezV.ListRendezVous[i].Structuredesante.Telephone;
+                        list_rv.Add(representation);
+                    }
+                    this.dataGridView1.DataSource = list_rv;
                 }
                 else
                 {
