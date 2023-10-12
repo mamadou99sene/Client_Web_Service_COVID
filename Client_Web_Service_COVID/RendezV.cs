@@ -32,6 +32,9 @@ namespace Client_Web_Service_COVID
         [XmlElement("typerendezvous")]
         [JsonProperty("typerendezvous")]
         public string Type { get; set; }
+        [XmlElement("status")]
+        [JsonProperty("status")]
+        public string Status { get; set; }
         [XmlElement("utilisateur")]
         [JsonProperty("utilisateur")]
         public Utilisateur User { get; set; }

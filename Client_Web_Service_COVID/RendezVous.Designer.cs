@@ -49,7 +49,6 @@
             this.ComboBoxIdentite.Name = "ComboBoxIdentite";
             this.ComboBoxIdentite.Size = new System.Drawing.Size(297, 21);
             this.ComboBoxIdentite.TabIndex = 1;
-            this.ComboBoxIdentite.SelectedIndexChanged += new System.EventHandler(this.ComboBoxIdentite_SelectedIndexChanged);
             // 
             // ComboBoxStructure
             // 
@@ -58,7 +57,6 @@
             this.ComboBoxStructure.Name = "ComboBoxStructure";
             this.ComboBoxStructure.Size = new System.Drawing.Size(298, 21);
             this.ComboBoxStructure.TabIndex = 2;
-            this.ComboBoxStructure.SelectedIndexChanged += new System.EventHandler(this.ComboBoxStructure_SelectedIndexChanged);
             // 
             // ComboBoxTypeRV
             // 
@@ -67,7 +65,6 @@
             this.ComboBoxTypeRV.Name = "ComboBoxTypeRV";
             this.ComboBoxTypeRV.Size = new System.Drawing.Size(297, 21);
             this.ComboBoxTypeRV.TabIndex = 3;
-            this.ComboBoxTypeRV.SelectedIndexChanged += new System.EventHandler(this.ComboBoxTypeRV_SelectedIndexChanged);
             // 
             // dateTimeRV
             // 
@@ -75,7 +72,6 @@
             this.dateTimeRV.Name = "dateTimeRV";
             this.dateTimeRV.Size = new System.Drawing.Size(297, 20);
             this.dateTimeRV.TabIndex = 4;
-            this.dateTimeRV.ValueChanged += new System.EventHandler(this.dateTimeRV_ValueChanged);
             // 
             // label1
             // 
@@ -87,7 +83,6 @@
             this.label1.Size = new System.Drawing.Size(170, 22);
             this.label1.TabIndex = 5;
             this.label1.Text = "Prise de rendez vous";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonEnregistrementRV
             // 
@@ -111,7 +106,6 @@
             this.labelIdentite.Size = new System.Drawing.Size(183, 19);
             this.labelIdentite.TabIndex = 7;
             this.labelIdentite.Text = "selectionner votre identité";
-            this.labelIdentite.Click += new System.EventHandler(this.labelIdentite_Click);
             // 
             // labelStructure
             // 
@@ -122,7 +116,6 @@
             this.labelStructure.Size = new System.Drawing.Size(232, 19);
             this.labelStructure.TabIndex = 8;
             this.labelStructure.Text = "Sélectionner la structure de santé";
-            this.labelStructure.Click += new System.EventHandler(this.labelStructure_Click);
             // 
             // labelTypeRV
             // 
@@ -133,7 +126,6 @@
             this.labelTypeRV.Size = new System.Drawing.Size(226, 19);
             this.labelTypeRV.TabIndex = 9;
             this.labelTypeRV.Text = "Séléctionner le type de votre RV";
-            this.labelTypeRV.Click += new System.EventHandler(this.labelTypeRV_Click);
             // 
             // labelDate
             // 
