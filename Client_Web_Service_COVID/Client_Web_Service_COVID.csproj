@@ -107,6 +107,7 @@
     <Compile Include="RendezVous.Designer.cs">
       <DependentUpon>RendezVous.cs</DependentUpon>
     </Compile>
+    <Compile Include="RepresentationRv.cs" />
     <Compile Include="Structuredesante.cs" />
     <Compile Include="SuivreMonRv.cs">
       <SubType>Form</SubType>
