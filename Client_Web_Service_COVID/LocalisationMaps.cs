@@ -79,12 +79,12 @@ namespace Client_Web_Service_COVID
                     adresse.Append("http://maps.google.com/maps?q=");
                     if(localisation!=string.Empty)
                     {
-                        adresse.Append(localisation +","+"+");
+                        adresse.Append(localisation);
                     }
-                    if (typeTraitement != string.Empty)
+                    /*if (typeTraitement != string.Empty)
                     {
-                        adresse.Append(typeTraitement + "," + "+");
-                    }
+                        adresse.Append(typeTraitement + "+");
+                    }*/
                     webBrowser1.Navigate(adresse.ToString());
                 }
                 catch (Exception ex)
@@ -94,5 +94,6 @@ namespace Client_Web_Service_COVID
             }
 
         }
+
     }
 }
