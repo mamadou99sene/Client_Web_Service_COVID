@@ -52,21 +52,20 @@ namespace Client_Web_Service_COVID
                         {
                             XmlSerializer s=new XmlSerializer(typeof(Utilisateur));
                             Utilisateur u=(Utilisateur)s.Deserialize(stringReader);
-                            List<dynamic> list = new List<dynamic>();
-                            list.Add(u);
-                            if(list!=null)
+                            if(u!=null)
                             {
                                 this.Hide();
                                 MainApplication main = new MainApplication();
                                 main.Show();
                             }
+                           
                         }
                     }
 
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Erreur de connexion "+ex.Message);
+                    MessageBox.Show("Email ou password incorrecte !!!");
                 }
 
             }
